@@ -7,7 +7,7 @@ public class Main {
         String a;
         Scanner s=new Scanner(System.in);
         Train t=new Train();
-        System.out.println("vvedite chislo");
+        System.out.println("vvedite String");
         a=s.nextLine();
         System.out.println(t.fizz( a));
         }
