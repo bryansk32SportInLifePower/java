@@ -1,3 +1,5 @@
+package miner;
+
 public enum Box {
     zero,
     num1,
