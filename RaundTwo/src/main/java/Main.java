@@ -19,7 +19,8 @@ private Game game;
 new Main();
     }
     Main(){
-        game=new Game(COLS,ROWS);
+        game=new Game(COLS,ROWS,BOMBS);
+       game.start();
         setImage();
         initPanel();
      initFrame();
@@ -43,7 +44,7 @@ new Main();
     }
     private void initFrame ()
     {
-        pack();
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle(" Sweeper ");
         setResizable(false);
@@ -52,6 +53,7 @@ new Main();
         setIconImage(getIme("icon"));//установка иконки для игры
        // setLocationRelativeTo(null);
         setVisible(true);
+        pack();
     }
     private void setImage(){
         for (miner.Box box: Box.values())

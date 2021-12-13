@@ -29,7 +29,13 @@ public class CoordsMake {
     }
 
 
+    public static boolean inBorder(Coordinats coordinats) {
 
+    return coordinats.x>=0&&coordinats.x<size.x&&
+            coordinats.y>=0&&coordinats.x<size.y;
+    }
 
-
+    public static Coordinats getRandomCoor() {
+        return new Coordinats(random.nextInt(size.x),random.nextInt(size.y));
+    }
 }
