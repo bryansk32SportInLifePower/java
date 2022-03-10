@@ -39,7 +39,19 @@ public class Hiber {
     }
 
     @Override
+    public String toString() {
+        return "Hiber{" +
+                "id=" + id +
+                ", tovar='" + tovar + '\'' +
+                ", chena=" + chena +
+                ", date=" + date +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
+
         return Objects.hash(tovar, chena, date, id);
     }
+
 }
