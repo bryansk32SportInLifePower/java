@@ -4,6 +4,7 @@ entity/HiberUt.java
  entity.HiberUt
 Main.java
  Main
-entity/MyasoBoxes.java
- entity.MyasoBoxes
- entity.MyasoBoxes$AddClient
+entity/Myso.java
+ entity.Myso
+ entity.Myso$1
+ entity.Myso$2

@@ -1,6 +1,7 @@
+
 import entity.Hiber;
 import entity.HiberUt;
-import entity.MyasoBoxes;
+import entity.Myso;
 import lombok.extern.log4j.Log4j2;
 import org.hibernate.Session;
 
@@ -12,23 +13,16 @@ import java.util.List;
 public class Main {
 
 
+
+
     
     public static void main(String[] args) {
 
-MyasoBoxes myasoBoxes=new MyasoBoxes();
-        MyasoBoxes.AddClient addClient=new MyasoBoxes.AddClient();
-myasoBoxes.go();
-       Hiber hiber = new Hiber();
-        Session session=HiberUt.getSessionfacktory().openSession();
-        session.getTransaction().begin();
-       // hiber.setTovar(hiber.setTovar(myasoBoxes.get););
-      //  hiber.setChena(getNumber());
-        session.getTransaction().commit();
-        session.close();
-       // HiberUt.shutup();
-Main main=new Main();
+       Main main=new Main();
+       Myso myso=new Myso();
+       //myso.go();
+myso.findClient();
 main.startWorkDatabase();
-//AddNumber addNumber=new AddNumber();
     }
     public void startWorkDatabase() {
         Session session=HiberUt.getSessionfacktory().openSession();
@@ -43,6 +37,9 @@ main.startWorkDatabase();
         }
         session.getTransaction().commit();
 session.close();
-HiberUt.shutup();
+//HiberUt.shutup();
     }
+
+
+
 }
