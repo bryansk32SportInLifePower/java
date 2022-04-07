@@ -40,11 +40,11 @@ public class Hiber {
 
     @Override
     public String toString() {
-        return "Hiber{" +
+        return "Clients{" +
                 "id=" + id +
-                ", tovar='" + tovar + '\'' +
-                ", chena=" + chena +
-                ", date=" + date +
+                ", client='" + tovar + '\'' +
+                ", phone number=" + chena +
+
                 '}';
     }
 

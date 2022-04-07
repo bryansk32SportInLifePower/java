@@ -10,10 +10,10 @@
        <property name="connection.username">postgres</property>
         <property name="connection.password">postgres</property>
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.format_sql"></property>
+
         <property name="hibernate.highlight_sql">true</property>
         <mapping class="entity.Hiber"/>
-       
+        <mapping class="entity.Sovetskyi"/>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
     </session-factory>

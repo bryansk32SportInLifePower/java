@@ -1,10 +1,12 @@
 entity/Hiber.java
  entity.Hiber
-entity/HiberUt.java
- entity.HiberUt
 Main.java
  Main
-entity/Myso.java
- entity.Myso
- entity.Myso$1
- entity.Myso$2
+entity/MysoTwo.java
+ entity.MysoTwo
+ entity.MysoTwo$1
+ entity.MysoTwo$2
+entity/HiberUt.java
+ entity.HiberUt
+entity/Sovetskyi.java
+ entity.Sovetskyi
