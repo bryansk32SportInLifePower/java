@@ -2,7 +2,7 @@ package com;
 
 import java.io.*;
 import java.net.*;
-import java.util.Scanner;
+
 
 public class Client {
     public static void main(String[] args) throws IOException {
@@ -16,20 +16,26 @@ public class Client {
                 new InputStreamReader(
                         socket.getInputStream()));
 
-
-        writer.write("I got www\n");
-        writer.newLine();
-        writer.flush();
-
         String respons = reader.readLine();
         System.out.println(respons);
-        
 
+
+
+            for (int i=1;i<5;i++){
+
+                String ss= String.valueOf(i);
+                writer.write(ss);
+                writer.newLine();
+                writer.flush();
+                String res=reader.readLine();
+                System.out.println(res);
+            }
 
 
 
             writer.close();
             reader.close();
             socket.close();
-        }
+
     }
+}
